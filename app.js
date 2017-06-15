@@ -1,21 +1,21 @@
 // REQUIRES
-// var dotenv = require('dotenv').config();
+var dotenv = require('dotenv');
 var Twitter = require('twitter');
 
 // LOAD ENV VARIABLES
-// dotenv.load();
+dotenv.load();
 
 // MAKE A TWITTER CLIENT
 var client = new Twitter({
-  consumer_key: 'QslkNuaueFXU5leoIodLu6pN5',
-  consumer_secret: 'VKbUM7yBkLyG7WfI6QHeOAYr0NNiyXpJGVlr4ynrrCaE44g8bQ',
-  access_token_key: '1568363912-EkkB9m27GicjJTRf5LpvbH1MO6yoxIzFg1zCG5y',
-  access_token_secret: 'qxsVvL2JeeWjYUzNI1p1hCJ7DKzMD5zcUfrKAXNl4qJlM'
+  // consumer_key: 'QslkNuaueFXU5leoIodLu6pN5',
+  // consumer_secret: 'VKbUM7yBkLyG7WfI6QHeOAYr0NNiyXpJGVlr4ynrrCaE44g8bQ',
+  // access_token_key: '1568363912-EkkB9m27GicjJTRf5LpvbH1MO6yoxIzFg1zCG5y',
+  // access_token_secret: 'qxsVvL2JeeWjYUzNI1p1hCJ7DKzMD5zcUfrKAXNl4qJlM'
 
-  // consumer_key: process.env.TWITTER_CONSUMER_KEY,
-  // consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
-  // access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
-  // access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
+  consumer_key: process.env.TWITTER_CONSUMER_KEY,
+  consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
+  access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY,
+  access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
 });
 
 // FUNCTION TO REVERSE A STRING
